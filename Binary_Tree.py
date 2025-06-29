@@ -20,8 +20,8 @@ class TreeNode:
         self.right = right
 
 
-#HOMEWORK 3
-class HomeWork3:
+#Binary_Tree
+class Binary_Tree:
     #Question 1 - Construct a Binary Tree using the given input
     #Input -> BFS representation of a tree
     #output -> The root node of the tree
@@ -213,12 +213,12 @@ class HomeWork3:
 
 #Main Function Do not edit the code below
 if __name__ == "__main__":
-    homework3 = HomeWork3()
+    binary_Tree = Binary_Tree()
 
     # QUESTION 1 and 2
     testcasesforquestion1 = []
     try:
-        with open("question1.csv", "r") as file:
+        with open("part1.csv", "r") as file:
             testCases = csv.reader(file)
             for row in testCases:
                 testcasesforquestion1.append(row)
@@ -234,35 +234,35 @@ if __name__ == "__main__":
             expectedOutput=expectedOutput.split(",")
             for i in range(len(expectedOutput)):
                 expectedOutput[i]=int(expectedOutput[i])
-        root = homework3.constructBinaryTree(inputValue)
-        recursiveOutput = homework3.inOrderTraversalRecursive(root)
-        iterativeOutput = homework3.inOrderTraversalIterative(root)
+        root = binary_Tree.constructBinaryTree(inputValue)
+        recursiveOutput = binary_Tree.inOrderTraversalRecursive(root)
+        iterativeOutput = binary_Tree.inOrderTraversalIterative(root)
         assert iterativeOutput == recursiveOutput == expectedOutput, f"Test Case {row} Failed: traversal outputs do not match"
         print(f"Test case {row} Passed")
 
-    # QUESTION 4
+    # Part 4
     testcasesForQuestion4 = []
     try:
-        with open("question4.csv", "r") as file:
+        with open("part4.csv", "r") as file:
             testCases = csv.reader(file)
             for row in testCases:
                 testcasesForQuestion4.append(row)
     except FileNotFoundError:
-        print("question4.csv File Not Found")
+        print("part4.csv File Not Found")
 
     if testcasesForQuestion4:
-        print("\nRUNNING TEST CASES FOR QUESTION 4")
+        print("\nRUNNING TEST CASES FOR Part 4")
         # Each test case: first field is the BFS string, second is expected BST result ("True" or "False")
         for idx, (inputValue, expectedBST) in enumerate(testcasesForQuestion4, start=1):
             expectedBST = True if expectedBST.strip() == "True" else False
-            root = homework3.constructBinaryTree(inputValue)
-            result = homework3.validateBST(root)
+            root = binary_Tree.constructBinaryTree(inputValue)
+            result = binary_Tree.validateBST(root)
             assert result == expectedBST, f"Test Case {idx} Failed: For input [{inputValue}], expected {expectedBST} but got {result}"
             print(f"Test case {idx} Passed")
 
     # QUESTION 3 TIMING / MEMORY STUDY
     print("\nGENERATING TIMING / MEMORY TABLE")
-    rows = homework3.compare_traversals(
+    rows = binary_Tree.compare_traversals(
         sizes=(10, 100, 1000, 2000), iterations=50
     )
 
