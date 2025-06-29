@@ -18,16 +18,12 @@ The following tasks were completed in this project:
   **Input:** `"1,2,3,None,None,4"`  
   **Output Tree:**
 ```
-
-```
   1
  / \
 2   3
    /
   4
 ```
-
-````
 
 ### ✅ 2. In-Order Traversal
 - Two versions of in-order traversal were implemented:
@@ -129,16 +125,10 @@ Timing and memory usage are collected for different input sizes:
 This project is for educational use under MSML 606 Data Structure and Algorithm.
 You are free to fork, study, or modify it for learning purposes.
 
----
-
 **Author:** Ateeq Ur Rehman
 Binary-Tree Project
 
-```
-
----
-
 Let me know if you’d like:
 - a `requirements.txt` file,
-- sample CSV input files (`question1.csv`, `question4.csv`),
+- sample CSV input files (`part1.csv`, `part4.csv`),
 - or a `LICENSE` file for GitHub.
