@@ -1,5 +1,8 @@
 # Binary-Tree-Toolkit Project
 
+Python-based project for constructing binary trees from level-order input, performing recursive and iterative in-order traversals, validating Binary Search Tree (BST) properties, and analyzing time and space complexity on complete and skewed trees using profiling tools.
+
+****************************
 This project was done as part of Data Structure and Algorithm  
 The main focus is on working with binary trees, understanding in-order traversal methods (both recursive and iterative), comparing their performance, and checking if a binary tree follows Binary Search Tree (BST) rules.
 
