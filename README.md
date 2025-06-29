@@ -134,5 +134,4 @@ Binary-Tree Project
 
 Let me know if you’d like:
 - a `requirements.txt` file,
-- sample CSV input files (`part1.csv`, `part4.csv`),
-- or a `LICENSE` file for GitHub.
+- sample CSV input files with detailed dataset.
