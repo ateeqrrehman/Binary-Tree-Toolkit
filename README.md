@@ -125,8 +125,12 @@ Timing and memory usage are collected for different input sizes:
 This project is for educational use under MSML 606 Data Structure and Algorithm.
 You are free to fork, study, or modify it for learning purposes.
 
+---
+
 **Author:** Ateeq Ur Rehman
 Binary-Tree Project
+
+---
 
 Let me know if you’d like:
 - a `requirements.txt` file,
