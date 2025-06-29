@@ -1,4 +1,4 @@
 ### Requirements
-python 3.11
-pandas
-matplotlib
+python 3.10 or later
+pandas >= 1.0
+matplotlib >= 3.0
