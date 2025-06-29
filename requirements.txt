@@ -1,4 +1,4 @@
 ### Requirements
-python 3.x
+python 3.11
 pandas
 matplotlib
